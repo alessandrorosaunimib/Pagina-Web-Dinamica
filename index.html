@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,18 +35,21 @@
     </div>
 
     <div class="hero">
-        <div class="hero__content">
+        <div class="hero__content reveal">
             <p class="intro-text">Intro Text</p>
             <h1 class="big-text">Titolo della mia Pagina Web</h1>
             <a href="" class="button">Discover More</a>
         </div>
+        <video autoplay muted loop id="bg-video">
+            <source src="bg-video.mp4" type="video/mp4">
+        </video>
     </div>
 
     <div class="poster mt-3">
-        <div class="poster__img">
+        <div class="poster__img reveal">
             <img src="bg-video.png" alt="">
         </div>
-        <div class="poster__content">
+        <div class="poster__content reveal">
             <h3 class="big-text">Titolo del mio poster</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt maxime mollitia veritatis unde dicta sed voluptatem enim doloribus similique, commodi animi ratione veniam corrupti, alias modi laudantium laboriosam debitis rerum.</p>
             <a href="" class="button">Call to action</a>
@@ -110,19 +113,23 @@
         </div>
     </footer>
 
-<!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
 
-<script>
-    $(document).ready(function(){
-        /*Pannel open*/
-        $(".hamburger").on('click', function(){
-            $(".menu").toggleClass("menu--open");
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            /*Pannel open*/
+            $(".hamburger").on('click', function(){
+                $(".menu").toggleClass("menu--open");
+            });
         });
-    });
-</script>
+
+        ScrollReveal().reveal('.reveal', { distance: '50px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600});
+    </script>
 
 </body>
 </html>
