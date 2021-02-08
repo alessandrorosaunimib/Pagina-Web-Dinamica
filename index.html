@@ -57,10 +57,10 @@
     </div>
 
     <div class="bg-cover mt-3">
-        <div class="bg-cover__title">
+        <div class="bg-cover__title reveal">
             <h3  class="big-text tw">Titolo del mio blocco cover</h3>
         </div>
-        <div class="bg-cover__content">
+        <div class="bg-cover__content reveal">
 
             <h4 class="normal-text tw">Titolo del mio paragrafo</h4>
             <p class="tw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, cum dignissimos. Quod pariatur voluptate, voluptatum consequuntur voluptatibus minus, necessitatibus blanditiis quasi perspiciatis fugit, iusto consequatur cupiditate quidem natus sit. Inventore!</p>
@@ -76,9 +76,9 @@
 
     <div class="grid mt-3">
         <div class="col">
-            <h3 class="big-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+            <h3 class="big-text reveal">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
         </div>
-        <div class="col mt-2">
+        <div class="col mt-2 mt-sma-0 reveal">
             <p>Ab eveniet, itaque ducimus reprehenderit delectus distinctio nobis necessitatibus accusamus eos blanditiis sed illo dolores culpa? Adipisci nulla quidem in molestiae cupiditate.</p>
         </div>
     </div>
@@ -94,19 +94,19 @@
 
     <footer class="footer mt-2">
         <div class="grid">
-            <div class="col">
+            <div class="col zoom">
                 <h4 class="normal-text tw">Lorem ipsum</h4>
                 <p class="tw">Lorem ipsum cose</p>
             </div>
-            <div class="col">
+            <div class="col zoom">
                 <h4 class="normal-text tw">Lorem ipsum</h4>
                 <p class="tw">Lorem ipsum cose</p>
             </div>
-            <div class="col">
+            <div class="col zoom">
                 <h4 class="normal-text tw">Lorem ipsum</h4>
                 <p class="tw">Lorem ipsum cose</p>
             </div>
-            <div class="col">
+            <div class="col zoom">
                 <h4 class="normal-text tw">Lorem ipsum</h4>
                 <p class="tw">Lorem ipsum cose</p>
             </div>
@@ -129,6 +129,7 @@
         });
 
         ScrollReveal().reveal('.reveal', { distance: '50px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600});
+        ScrollReveal().reveal('.zoom', { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale: 0.75});
     </script>
 
 </body>
